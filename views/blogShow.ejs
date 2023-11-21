@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+    <body>
+        <h1><%=blog.title; %></h1>
+        <p><%=blog.content; %>.</p>
+        <img src="<%=blog.img%>" />
+        <p> Published: <%=blog.created; %>.</p>
+        <nav>
+            <a href="/blog">Back to blog</a>
+        </nav>
+    </body>
+</html>

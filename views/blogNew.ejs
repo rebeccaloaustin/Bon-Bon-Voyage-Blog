@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+<h1>New Article</h1>
+<form action="/blog" method="POST">
+  Title: <input type="text" name="title" /><br />
+  Content: <input type="text" name="content" /><br />
+  Image link: <input type="text" name="img" /><br />
+  <label for="destination">Choose a Destination:</label>
+  <select name="destination">
+    <% destinations.forEach(destination => { %>
+    <option value="<%= destination._id %>"><%= destination.name %></option>
+    <% }) %>
+  </select>
+  <input type="submit" value="publish article" />
+</form>
