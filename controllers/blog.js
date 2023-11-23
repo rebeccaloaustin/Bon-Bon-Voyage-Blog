@@ -1,38 +1,21 @@
 const express = require('express');
 const router = express.Router();
 const Blog = require('../models/blog');
-const Destination = require('../models/destination');
 
 //I.N.D.U.C.E.S.
 
 //SEED
 router.get('/seed', (req, res)=>{
-  Destination.create([{
-    name: 'Europe'
-  },
-  {
-    name: 'Asia & Oceania'
-  },
-  {
-    name: 'Africa'
-  },
-  {
-    name: 'North America'
-  },
-  {
-    name: 'Caribbean & Central America'
-  },
-  {
-    name: 'Middle East'
+  Blog.create([{
+  title: 'article',
+  content: 'this is my content',
+  img: 'https://www.ikea.com/us/en/images/products/fejka-artificial-potted-plant-indoor-outdoor-succulent__1090892_pe862200_s5.jpg?f=s'
   },
 ], (err, data)=>{
   res.redirect('/blog')
 })
 })
-//DESTINATIONS
-router.get("/destinations", (req, res) => {
-  res.render("destinations.ejs");
-});
+
 
 //ABOUT
 router.get("/about", (req, res) => {
@@ -41,49 +24,54 @@ router.get("/about", (req, res) => {
 //INDEX
 router.get("", (req, res) => {
   Blog.find({}, (error, allBlogs) => {
-    res.render("blog.ejs", {
+    res.render("index.ejs", {
       blog: allBlogs
     });
   });
 });
 //NEW
 router.get("/new", (req, res) => {
-  // Fetch all destinations
-  Destination.find({}, (error, allDestinations) => {
-    if (error) {
-      console.log(error);
-      res.send(error);
-    } else {
-      console.log("Destinations:", allDestinations);
-      res.render("blogNew.ejs", { destinations: allDestinations });
-    }
-  });
+  res.render("new.ejs");
 });
 //DELETE
-
+router.delete("/:id", (req, res) => {
+  Blog.findByIdAndRemove(req.params.id, (err, data) => {
+      res.redirect('/blog')
+  })
+})
 //UPDATE
-
+router.put('/:id', (req, res)=>{
+  Blog.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedModel)=>{
+      res.redirect('/blog')
+  })
+})
 //CREATE
 router.post("/", (req, res) => {
-  // Extract the destination ID from the form data
-  const destinationId = req.body.destination;
-
-  // Create a new blog post with the specified destination
-  Blog.create({ ...req.body, destination: destinationId }, (error, createdBlog) => {
+  Blog.create(req.body, (error, createdBlog) => {
     if (error) {
       console.log(error);
       res.send(error);
     } else {
-      res.redirect('/blog');
+        res.redirect('/blog');
     }
   });
 });
 //EDIT
+router.get('/:id/edit', (req, res)=>{
+  Blog.findById(req.params.id, (err, selectedBlog)=>{
+      res.render(
+      'edit.ejs',
+      {
+        blog: selectedBlog
+      }
+    )
+  })
+})
 
 //SHOW
 router.get('/:id', (req, res)=>{
   Blog.findById(req.params.id, (err, selectedBlog)=>{
-      res.render('blogShow.ejs', {
+      res.render('show.ejs', {
           blog: selectedBlog
       });
   });

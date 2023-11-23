@@ -4,12 +4,7 @@ const blogSchema = new mongoose.Schema({
   title: { type: String, required: true },
   content: { type: String, required: true },
   img: String,
-  created: { type: Date, default: Date.now },
-  destination: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Destination",
-    required: true,
-  },
+  createdAt: { type: Date, default: Date.now },
 });
 
 const Blog = mongoose.model("Blog", blogSchema);

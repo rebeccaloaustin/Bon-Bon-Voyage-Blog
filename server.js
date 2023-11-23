@@ -20,6 +20,7 @@ mongoose.connection.once("open", () => {
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'))
 app.use('/blog', blogController)
+
 app.use(express.static('public'));
 
 //HOME ROUTE
