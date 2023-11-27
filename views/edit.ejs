@@ -3,6 +3,8 @@
 <form action="/blog/<%=blog.id%>?_method=PUT" method="POST">
   Title: <input type="text" name="title" value="<%=blog.title%>" /><br />
   Content: <input type="text" name="content" value="<%=blog.content%>"/><br />
+  Date: <input type="text" name="date" value="<%=blog.date%>"/><br />
   Image link: <input type="text" name="img" value="<%=blog.img%>"/><br />
   <input type="submit" value="Submit Changes" />
 </form>
+<%- include('partials/footer') %>

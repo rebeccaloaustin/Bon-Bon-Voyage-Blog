@@ -1,19 +1,20 @@
 <%- include('partials/header') %>
   <body>
-    <h1 class="header"> blog route works</h1>
     <nav>
-        <a href="/blog/new"> Add a Blog</a>
+        <a class="addBlog" href="/blog/new"> Add a Blog</a>
       </nav>
       <ul>
       <% for(let i = 0; i < blog.length; i++){ %>
       <li>
         <a href="/blog/<%=blog[i].id; %>">
           <%=blog[i].title%>
-          <img src="<%=blog[i].img%>" />
+          <img class="imgArticles" src="<%=blog[i].img%>" />
         </a>
+        <%=blog[i].date%>
       </li>
       <% } %>
     </ul>
     
   </body>
 </html>
+<%- include('partials/footer') %>
