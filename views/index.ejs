@@ -1,16 +1,19 @@
 <%- include('partials/header') %>
-  <body>
-    <nav>
-        <a class="addBlog" href="/blog/new"> Add a Blog</a>
+  <body class="showBody">
+    <nav class="back">
+      <p id="addStory">SHARE YOUR CHAPTER</p>
+        <a class="addBlog" id="addBlogBtn" href="/blog/new"> Add a Blog</a>
       </nav>
-      <ul>
+      <ul class="list">
       <% for(let i = 0; i < blog.length; i++){ %>
-      <li>
+      <li class="articleBoxes">
         <a href="/blog/<%=blog[i].id; %>">
-          <%=blog[i].title%>
           <img class="imgArticles" src="<%=blog[i].img%>" />
+          <div class="articleTitle"><%=blog[i].title%></div>
+          <div class="addBlog" id="readMore">READ MORE</div>
         </a>
-        <%=blog[i].date%>
+        <div id="date"><%=blog[i].date%></div>
+        <div id="preview"><%=blog[i].preview%></div>
       </li>
       <% } %>
     </ul>

@@ -1,10 +1,14 @@
 <%- include('partials/header') %>
-<h1>Edit Article</h1>
-<form action="/blog/<%=blog.id%>?_method=PUT" method="POST">
+<h1 class="newEditTitle">Edit Article</h1>
+<form class="formPage" action="/blog/<%=blog.id%>?_method=PUT" method="POST">
   Title: <input type="text" name="title" value="<%=blog.title%>" /><br />
-  Content: <input type="text" name="content" value="<%=blog.content%>"/><br />
+  Preview: <input type="text" name="content" value="<%=blog.content%>"/><br />
+  Content: <input type="text" name="contentTwo" value="<%=blog.contentTwo%>"/><br />
+  Quote: <input type="text" name="quote" value="<%=blog.quote%>"/><br />
   Date: <input type="text" name="date" value="<%=blog.date%>"/><br />
-  Image link: <input type="text" name="img" value="<%=blog.img%>"/><br />
-  <input type="submit" value="Submit Changes" />
+  Image 1 link: <input type="text" name="img" value="<%=blog.img%>"/><br />
+  Image 2 link: <input type="text" name="imgTwo" value="<%=blog.imgTwo%>"/><br />
+  Image 3 link: <input type="text" name="imgThree" value="<%=blog.imgThree%>"/><br />
+  <input class="addBlog" id="submitBtn"type="submit" value="Submit Changes" />
 </form>
 <%- include('partials/footer') %>

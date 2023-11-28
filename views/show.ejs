@@ -1,17 +1,23 @@
 <%- include('partials/header') %>
-    <body>
-        <h1><%=blog.title; %></h1>
-        <p><%=blog.content; %>.</p>
-        <img src="<%=blog.img%>" />
+    <body class="showBody">
+        <h1 class="addTitle" id="showTitle"><%=blog.title; %></h1>
+        <nav>
+            <a class="editIcon" href="/blog/<%=blog._id %>/edit"><i class="fa-regular fa-pen-to-square"></i></a>
+        </nav>
+        <p class="blogContent" id="blogContent"><%=blog.content; %></p>
+        <p class="blogContent" id="blogContentTwo"><%=blog.contentTwo; %></p>
+        <p class="showQuote"><%=blog.quote; %></p>
+        <img class="showImg" id="showImgOne" src="<%=blog.img%>" />
+        <img class="showImg" id="showImgTwo" src="<%=blog.imgTwo%>" />
+        <img class="showImg" id="showImgThree" src="<%=blog.imgThree%>" />
         <p> Published: <%=blog.createdAt; %>.</p>
-        <form class="text" action="/blog/<%=blog._id %>?_method=DELETE" method="POST">
-            <input type = "submit" value="Delete">
+        <form class="trashIcon" id="deleteBtn" action="/blog/<%=blog._id %>?_method=DELETE" method="POST">
+            <button type="submit" class="deleteButton">
+                <i class="fa-solid fa-trash"></i>
+            </button>
         </form>
         <nav>
-            <a class="text" href="/blog/<%=blog._id %>/edit">Edit article details</a>
-        </nav>
-        <nav>
-            <a href="/blog">Back to blog</a>
+            <a class="addBlog" href="/blog">Back to blog</a>
         </nav>
     </body>
 </html>

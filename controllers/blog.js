@@ -7,15 +7,17 @@ const Blog = require('../models/blog');
 //SEED
 router.get('/seed', (req, res)=>{
   Blog.create([{
-  title: 'article',
-  content: 'this is my content',
-  img: 'https://www.ikea.com/us/en/images/products/fejka-artificial-potted-plant-indoor-outdoor-succulent__1090892_pe862200_s5.jpg?f=s'
-  },
-], (err, data)=>{
+    title: "Costa Rica",
+    preview: "The art of slow living is something yet to be mastered by the Western world.",
+    content: "Costa Rica lives up to it's name. From year-round tropical climate, beaches, mountains, lush valleys and rainforests, Costa Rica has it all. It's a different way of life.",
+    content2: "Fresh coconuts galore! Each day spent on the peninsula, I started my days with chilled coconut water which naturally gave me the stamina to explore.",
+    quote: "Pura Vida. It means 'pure life', but the true meaning really is more along the lines of 'life is good'.",
+    img: ["public/css/photos/bananas.jpeg"],
+    date: "August 22, 2021",
+}], (err, data)=>{
   res.redirect('/blog')
 })
 })
-
 
 //ABOUT
 router.get("/about", (req, res) => {
@@ -76,7 +78,6 @@ router.get('/:id', (req, res)=>{
       });
   });
 });
-
 
 
 

@@ -1,10 +1,15 @@
 <%- include('partials/header') %>
-<h1>New Article</h1>
-<form action="/blog" method="POST">
+<h1 class="newEditTitle">New Article</h1>
+<form class="formPage" action="/blog" method="POST">
   Title: <input type="text" name="title" /><br />
+  Preview: <input type="text" name="preview" /><br />
   Content: <input type="text" name="content" /><br />
+  More Content: <input type="text" name="contentTwo" /><br />
+  Quote: <input type="text" name="quote" /><br />
   Date: <input type="text" name="date" /><br />
-  Image link: <input type="text" name="img" /><br />
-  <input type="submit" value="publish article" />
+  Image 1 link: <input type="text" name="img" /><br />
+  Image 2 link: <input type="text" name="imgTwo" /><br />
+  Image 3 link: <input type="text" name="imgThree" /><br />
+  <input class="addBlog" id="submitBtn" type="submit" value="Publish Article" />
 </form>
 <%- include('partials/footer') %>
