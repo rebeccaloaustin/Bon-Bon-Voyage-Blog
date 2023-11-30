@@ -7,13 +7,16 @@ const Blog = require('../models/blog');
 //SEED
 router.get('/seed', (req, res)=>{
   Blog.create([{
-    title: "Costa Rica",
-    preview: "The art of slow living is something yet to be mastered by the Western world.",
-    content: "Costa Rica lives up to it's name. From year-round tropical climate, beaches, mountains, lush valleys and rainforests, Costa Rica has it all. It's a different way of life.",
-    content2: "Fresh coconuts galore! Each day spent on the peninsula, I started my days with chilled coconut water which naturally gave me the stamina to explore.",
-    quote: "Pura Vida. It means 'pure life', but the true meaning really is more along the lines of 'life is good'.",
-    img: ["public/css/photos/bananas.jpeg"],
-    date: "August 22, 2021",
+    title: "France",
+    preview: "When in France, do as the French do.",
+    content: "Ah, France, the culinary maestro of the world, where every meal is a poetic symphony and every bite an ode to gastronomic bliss. In the heart of Paris, where the Eiffel Tower watches over the city like a culinary connoisseur, you'll find bustling patisseries tempting you with flaky croissants and decadent éclairs. Venture into the vibrant markets, like Marché Bastille, where the scent of ripe cheeses and freshly baked baguettes wafts through the air, inviting you to indulge in a fromage feast.",
+    contentTwo: "France is a canvas of flavors, from the buttery escargot of Burgundy to the savory ratatouille of Provence. And let's not forget the pièce de résistance, a perfectly cooked coq au vin or a delicate bouillabaisse that transports you to the sun-soaked shores of Marseille. In France, every meal is a masterpiece, and each bite is a journey through the rich tapestry of culinary excellence. Bon appétit!",
+    quote: "“To know Paris is to know a great deal.” – Henry Miller",
+    img: "https://i.pinimg.com/originals/2f/09/a6/2f09a6d806be51ccc437c59da53a6f5d.png",
+  imgTwo:"https://i.pinimg.com/originals/f7/62/c2/f762c25e4065f66f7b4cd21b5d8911af.jpg",
+  imgThree: "https://i.pinimg.com/originals/f2/c7/19/f2c7193850575fe9dda2ea407fa9ca4e.jpg",
+  imgFour: "https://i.pinimg.com/474x/bf/b8/78/bfb878a3f9a21b06da7a2c74a3f7f221.jpg",
+    date: "March 1st, 2020",
 }], (err, data)=>{
   res.redirect('/blog')
 })

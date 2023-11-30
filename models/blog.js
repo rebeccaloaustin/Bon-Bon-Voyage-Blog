@@ -5,11 +5,11 @@ const blogSchema = new mongoose.Schema({
   preview: String,
   content: { type: String, required: true },
   contentTwo: String,
-  contentThree: String,
   quote: String,
   img: String,
   imgTwo:String,
   imgThree: String,
+  imgFour: String,
   date: String,
   createdAt: { type: Date, default: Date.now },
 });
