@@ -7,13 +7,15 @@
       <ul class="list">
       <% for(let i = 0; i < blog.length; i++){ %>
       <li class="articleBoxes">
+        <div id="date"><%=blog[i].date%></div>
         <a href="/blog/<%=blog[i].id; %>">
           <img class="imgArticles" src="<%=blog[i].img%>" />
           <div class="articleTitle"><%=blog[i].title%></div>
+          
           <div class="addBlog" id="readMore">READ MORE</div>
         </a>
-        <div id="date"><%=blog[i].date%></div>
         <div id="preview"><%=blog[i].preview%></div>
+        <img id="stamp" src="https://images.rawpixel.com/image_png_450/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L2pvYjc1OC0wOC5wbmc.png">
       </li>
       <% } %>
     </ul>

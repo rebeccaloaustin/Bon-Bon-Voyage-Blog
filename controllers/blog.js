@@ -13,9 +13,9 @@ router.get('/seed', (req, res)=>{
     contentTwo: "France is a canvas of flavors, from the buttery escargot of Burgundy to the savory ratatouille of Provence. And let's not forget the pièce de résistance, a perfectly cooked coq au vin or a delicate bouillabaisse that transports you to the sun-soaked shores of Marseille. In France, every meal is a masterpiece, and each bite is a journey through the rich tapestry of culinary excellence. Bon appétit!",
     quote: "“To know Paris is to know a great deal.” – Henry Miller",
     img: "https://i.pinimg.com/originals/2f/09/a6/2f09a6d806be51ccc437c59da53a6f5d.png",
-  imgTwo:"https://i.pinimg.com/originals/f7/62/c2/f762c25e4065f66f7b4cd21b5d8911af.jpg",
-  imgThree: "https://i.pinimg.com/originals/f2/c7/19/f2c7193850575fe9dda2ea407fa9ca4e.jpg",
-  imgFour: "https://i.pinimg.com/474x/bf/b8/78/bfb878a3f9a21b06da7a2c74a3f7f221.jpg",
+    imgTwo:"https://i.pinimg.com/originals/f7/62/c2/f762c25e4065f66f7b4cd21b5d8911af.jpg",
+    imgThree: "https://i.pinimg.com/originals/f2/c7/19/f2c7193850575fe9dda2ea407fa9ca4e.jpg",
+    imgFour: "https://i.pinimg.com/474x/bf/b8/78/bfb878a3f9a21b06da7a2c74a3f7f221.jpg",
     date: "March 1st, 2020",
 }], (err, data)=>{
   res.redirect('/blog')
