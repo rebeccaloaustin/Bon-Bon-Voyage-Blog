@@ -3,15 +3,14 @@
 "Explore the World, One Bite at a Time: Where Adventure Meets Appetite in Every Corner!"
 
 Table of Contents
-Introduction
-Features
-Installation
-Usage
-Dependencies
-Configuration
-Acknowledgments
-Contact Information
-Screenshots
+1. Introduction 
+2. Features
+3. Getting Started
+4. Usage
+5. Dependencies
+6. Acknowledgments
+7. Contact Information 
+8. Screenshots
 
 Introduction
 Welcome to the Bon Bon Voyage Blog! This project is a full stack application designed to allow users to create, view, edit, and delete travel blog articles. Enjoy the array of articles featuring different countries/cities such as France, Italy, Japan, New York City, and so many more. Explore the World, One Bite at a Time: Where Adventure Meets Appetite in Every Corner!
@@ -47,9 +46,6 @@ Express
 Mongoose
 method-override
 dotenv
-
-Configuration
-Set up a .env file with your MongoDB URI.
 
 Acknowledgments
 Icons from fontawesome. Photo sources include: pinterest, instagram, and google images. I do not own any of the photos used in the application.
