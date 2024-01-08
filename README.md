@@ -41,7 +41,7 @@ Edit blog articles by selecting the edit icon on the top right of each selected 
 Delete blog articles by selecting the trash icon on the top left of each selected article.
 Follow the social media links on the bottom center of the page to view popular social media platforms such as Facebook, Twitter, Instagram, and Youtube.
 
-Dependencies
+Technologies & Dependencies
 Express
 Mongoose
 method-override
