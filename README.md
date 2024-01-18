@@ -61,5 +61,5 @@ Follow the social media links on the bottom center of the page to view popular s
 ## Acknowledgments
 Icons from fontawesome. Photo sources include: pinterest, instagram, and google images. I do not own any of the photos used in the application.
 
-## Contact Information
+## Contact Information 📧
 Email: rebeccaloaustin@gmail.com 
