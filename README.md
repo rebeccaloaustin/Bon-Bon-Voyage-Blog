@@ -49,7 +49,7 @@ Follow the social media links on the bottom center of the page to view popular s
 - method-override
 - dotenv
 
-## Screenshots
+## Screenshots :camera_flash:
 <img width="1508" alt="Screenshot 2023-11-30 at 9 55 13 PM" src="https://github.com/rebeccaloaustin/Bon-Bon-Voyage-Blog/assets/141693053/a27d090d-a47a-4e58-8091-559e71ed2be8">
 <img width="1506" alt="Screenshot 2023-11-30 at 9 55 40 PM" src="https://github.com/rebeccaloaustin/Bon-Bon-Voyage-Blog/assets/141693053/0d3b001a-04e1-44a3-888e-cdcf4762e453">
 <img width="1481" alt="Screenshot 2023-11-30 at 9 55 58 PM" src="https://github.com/rebeccaloaustin/Bon-Bon-Voyage-Blog/assets/141693053/9341eeda-97a6-4698-b5d4-a2f6ebf56247">
@@ -62,4 +62,4 @@ Follow the social media links on the bottom center of the page to view popular s
 Icons from fontawesome. Photo sources include: pinterest, instagram, and google images. I do not own any of the photos used in the application.
 
 ## Contact Information
-Email: rebeccaloaustin@gmail.com
+Email: rebeccaloaustin@gmail.com 
