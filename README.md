@@ -1,6 +1,6 @@
 # Bon-Bon-Voyage Blog
 
-"Explore the World, One Bite at a Time: Where Adventure Meets Appetite in Every Corner!"
+"Explore the World, One Bite at a Time: Where Adventure Meets Appetite in Every Corner!" :earth_africa: :airplane:
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -14,7 +14,7 @@
 
 
 ## Introduction
-Welcome to the Bon Bon Voyage Blog! This project is a full stack application designed to allow users to create, view, edit, and delete travel blog articles. Enjoy the array of articles featuring different countries/cities such as France, Italy, Japan, New York City, and so many more. Explore the World, One Bite at a Time: Where Adventure Meets Appetite in Every Corner!
+Welcome to the Bon Bon Voyage Blog! This project is a full stack application designed to allow users to create, view, edit, and delete travel blog articles. Enjoy the array of articles featuring different countries/cities such as France, Italy, Japan, New York City, and so many more. Explore the World, One Bite at a Time: Where Adventure Meets Appetite in Every Corner! :croissant: :spaghetti: :dango: :statue_of_liberty: :pizza:
 
 ## Features
 User has the ability to create, view, edit, and delete travel blog articles.
