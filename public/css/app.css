@@ -102,7 +102,7 @@ header {
     }
 }
 .editNav{
-  margin-left: 62vh;
+  margin-left: 65vh;
 }
 .trashIcon button {
     border: none;
@@ -110,7 +110,7 @@ header {
     padding: 0;
     cursor: pointer;
     @media only screen and (max-width: 767px) {
-      margin-left: -16vh;
+      margin-left: -2vh;
       margin-bottom: 2vh;
      }
 }
@@ -235,7 +235,6 @@ footer {
   margin-top: -75vh;
   margin-left: 95vh;
   padding-bottom: 7%;
-  font-style: italic;
   font-family: "Bodoni Moda", serif;
   @media only screen and (max-width: 767px) {
     text-align: center;
@@ -553,7 +552,7 @@ aspect-ratio: 1 / 1;
     margin-top: 175px;
     @media only screen and (max-width: 767px) {
       margin-top: 2vh;
-      margin-left: 5vh;
+      margin-left: 7vh;
       height: 40vh;
   width: 35vh;
     }
@@ -569,7 +568,7 @@ margin-top: 175px;
 margin-left: 160px;
 @media only screen and (max-width: 767px) {
   margin-top: 10vh;
-  margin-left: 5vh;
+  margin-left: 7vh;
   margin-bottom: 0vh;
   height: 40vh;
   width: 35vh;
@@ -586,7 +585,7 @@ position: absolute;
 margin-top: -240px;
 margin-left: 850px;
 @media only screen and (max-width: 767px) {
-  margin-left: 5vh;
+  margin-left: 7vh;
   height: 40vh;
   width: 35vh;
   margin-top: -75vh;
@@ -603,7 +602,7 @@ margin-left: 850px;
     @media only screen and (max-width: 767px) {
       height: 40vh;
       width: 35vh;
-      margin-left: 5vh;
+      margin-left: 7vh;
       margin-top: 2vh;
       margin-bottom: 5vh;
     }
@@ -721,7 +720,7 @@ margin-left: 850px;
     margin-top: -30vh;
     margin-bottom: 16vh;
     max-width: 65%;
-    margin-left: 20vh;
+    margin-left: 21vh;
     
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -762,7 +761,7 @@ margin-left: 850px;
   position: absolute;
   bottom: 150px;
   @media only screen and (max-width: 767px) {
-    margin-left: -8vh;
+    margin-left: -15vh;
     margin-top: 20vh;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -921,7 +920,7 @@ margin-left: 850px;
   font-family: "Antic Didone", serif;
   color: black;
   @media only screen and (max-width: 767px) {
-    /* Styles for small screens */
+    margin-left: 3vh;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     /* Styles for medium screens */
