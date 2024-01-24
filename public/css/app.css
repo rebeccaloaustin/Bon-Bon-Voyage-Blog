@@ -142,7 +142,7 @@ footer {
   background-color: rgba(252, 248, 241, 0.616);
   padding: 30px 10%;
   @media only screen and (max-width: 767px) {
-    margin-left: 5vh;
+    margin-left: 3vh;
     width: 330px;
     font-size: 12px;
     margin-top: -30vh;
@@ -218,7 +218,7 @@ footer {
   border: 2px solid black;
   @media only screen and (max-width: 767px) {
     height: 50vh;
-    margin-left: 3vh;
+    margin-left: 5vh;
     margin-top: 3vh;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -239,7 +239,7 @@ footer {
   font-family: "Bodoni Moda", serif;
   @media only screen and (max-width: 767px) {
     text-align: center;
-    margin-left: 3vh;
+    margin-left: 5vh;
     margin-top: -2vh;
     max-width: 40vh;
     margin-bottom: -80vh;
@@ -281,7 +281,7 @@ footer {
     z-index: 2;
     margin-top: 25vh;
     max-width: 25vh;
-    margin-left: 10vh;
+    margin-left: 15vh;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     /* Styles for medium screens */
@@ -304,7 +304,7 @@ footer {
   @media only screen and (max-width: 767px) {
     margin-top: 2vh;
     font-size: 1.5vh;
-    margin-left: -2vh;
+    margin-left: 10vh;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     /* Styles for medium screens */
@@ -690,7 +690,7 @@ margin-left: 850px;
     margin-left: 3vh;
     max-width: 38vh;
     line-height: 1em;
-    margin-top: -13vh;
+    margin-top: -15vh;
     text-align: center;
     float: left;
     font-size: 29px;
@@ -721,6 +721,7 @@ margin-left: 850px;
     margin-top: -30vh;
     margin-bottom: 16vh;
     max-width: 65%;
+    margin-left: 20vh;
     
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -746,7 +747,7 @@ margin-left: 850px;
     height: 45vh;  
     width: 87%;
     margin-top: 8vh; 
-    margin-bottom: 25vh;
+    margin-bottom: 30vh;
     padding-bottom: 10px;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -761,7 +762,7 @@ margin-left: 850px;
   position: absolute;
   bottom: 150px;
   @media only screen and (max-width: 767px) {
-    margin-left: -26vh;
+    margin-left: -20vh;
     margin-top: 20vh;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
