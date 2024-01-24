@@ -92,7 +92,7 @@ header {
     float: right;
     margin-right: 200px;
     @media only screen and (max-width: 767px) {
-     margin-left: 10vh;
+     margin-left: 6vh;
     }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       /* Styles for medium screens */
@@ -102,7 +102,7 @@ header {
     }
 }
 .editNav{
-  margin-left: 65vh;
+  margin-left: 60vh;
 }
 .trashIcon button {
     border: none;
@@ -110,7 +110,7 @@ header {
     padding: 0;
     cursor: pointer;
     @media only screen and (max-width: 767px) {
-      margin-left: -2vh;
+      margin-left: 5vh;
       margin-bottom: 2vh;
      }
 }
@@ -589,6 +589,7 @@ margin-left: 850px;
   height: 40vh;
   width: 35vh;
   margin-top: -75vh;
+  margin-bottom: 5vh;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* Styles for medium screens */
@@ -720,7 +721,7 @@ margin-left: 850px;
     margin-top: -30vh;
     margin-bottom: 16vh;
     max-width: 65%;
-    margin-left: 21vh;
+    margin-left: 23vh;
     
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -761,7 +762,7 @@ margin-left: 850px;
   position: absolute;
   bottom: 150px;
   @media only screen and (max-width: 767px) {
-    margin-left: -15vh;
+    margin-left: -14vh;
     margin-top: 20vh;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -920,7 +921,7 @@ margin-left: 850px;
   font-family: "Antic Didone", serif;
   color: black;
   @media only screen and (max-width: 767px) {
-    margin-left: 3vh;
+    margin-left: 2vh;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     /* Styles for medium screens */
