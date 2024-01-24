@@ -13,11 +13,27 @@
 
 header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between; 
   align-items: center;
-  padding: 30px 10%;
+  padding: 20px 10%;
   margin-top: 5px;
 }
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 767px) {
+  header {
+    flex-direction: column; 
+    align-items: flex-start;
+    text-align: center;
+    padding: 20px 20%;
+
+  }
+
+  .headerLi, .headerA {
+    margin-bottom: 10px; 
+  }
+}
+
 .social-media-icons ul {
   list-style: none;
   padding: 0;
@@ -29,6 +45,15 @@ header {
   font-size: 20px;
   letter-spacing: 20px;
   color: black;
+  @media only screen and (max-width: 767px) {
+    /* Styles for small screens */
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .social-media-icons li:hover {
   cursor: pointer;
@@ -66,13 +91,28 @@ header {
     font-size: 20px;
     float: right;
     margin-right: 200px;
+    @media only screen and (max-width: 767px) {
+     margin-left: 10vh;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      /* Styles for medium screens */
+    }
+    @media only screen and (min-width: 992px) {
+      /* Styles for large screens */
+    }
 }
-
+.editNav{
+  margin-left: 62vh;
+}
 .trashIcon button {
     border: none;
     background: none;
     padding: 0;
     cursor: pointer;
+    @media only screen and (max-width: 767px) {
+      margin-left: -16vh;
+      margin-bottom: 2vh;
+     }
 }
 
 footer {
@@ -81,10 +121,19 @@ footer {
   justify-content: center;
   height: 100px;
   margin-top: 40px;
+  @media only screen and (max-width: 767px) {
+   margin-top: 10vh;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 
 .hellodiv {
-  margin-top: 810px;
+  margin-top: -2vh;
   text-align: center;
   font-size: 18px;
   width: 600px;
@@ -92,12 +141,33 @@ footer {
   margin-left: 430px;
   background-color: rgba(252, 248, 241, 0.616);
   padding: 30px 10%;
+  @media only screen and (max-width: 767px) {
+    margin-left: 5vh;
+    width: 330px;
+    font-size: 12px;
+    margin-top: -30vh;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .logo {
   cursor: pointer;
   margin-right: auto;
   margin-left: -120px;
   height: 50px;
+  @media only screen and (max-width: 767px) {
+    /* Styles for small screens */
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 
 .title {
@@ -107,50 +177,118 @@ footer {
   font-family: "Bodoni Moda", serif;
   font-size: 25px;
   letter-spacing: 0.2em;
+  text-decoration: none;
+  color: #000;
+  @media only screen and (max-width: 767px) {
+    margin-left: 1vh;
+    margin-bottom: 0.5vh;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .addTitle {
   font-family: "Bodoni Moda", serif;
   font-size: 25px;
   letter-spacing: 0.2em;
+  @media only screen and (max-width: 767px) {
+    /* Styles for small screens */
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 #aboutTitle {
   margin-top: 30px;
   text-align: center;
+
 }
 .aboutImg {
-  height: 600px;
-  margin-left: 150px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  height: 70vh;
+  margin-left: 25vh;
+  margin-top: 10vh;
+  margin-bottom: 7vh;
   animation: fadeIn 5s;
   border: 2px solid black;
+  @media only screen and (max-width: 767px) {
+    height: 50vh;
+    margin-left: 3vh;
+    margin-top: 3vh;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+   
+  }
+  @media only screen and (min-width: 992px) {
+    
+  }
 }
 
 #aboutSection {
   width: 500px;
-  position: absolute;
-  margin-top: -600px;
-  margin-left: 750px;
+  position: relative;
+  margin-top: -75vh;
+  margin-left: 95vh;
+  padding-bottom: 7%;
   font-style: italic;
   font-family: "Bodoni Moda", serif;
+  @media only screen and (max-width: 767px) {
+    text-align: center;
+    margin-left: 3vh;
+    margin-top: -2vh;
+    max-width: 40vh;
+    margin-bottom: -80vh;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .aboutBackground {
     background-color: rgba(252, 248, 241, 0.616);
     margin-top: 60px;
     margin-bottom: 0px; 
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 90vh;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      /* Styles for medium screens */
+    }
+    @media only screen and (min-width: 992px) {
+      /* Styles for large screens */
+    }
 }
 .quote {
   font-style: italic;
   font-family: "Bodoni Moda", serif;
   color: white;
   font-weight: 300;
-  z-index: 2;
   background-color: transparent;
   text-align: center;
-  position: absolute;
-  top: 450px;
-  left: 390px;
   z-index: 2;
+  position: relative; /* or absolute, depending on your layout needs */
+  top: -50vh; 
+  @media only screen and (max-width: 767px) {
+    font-size: 2vh;
+    color: white;
+    z-index: 2;
+    margin-top: 25vh;
+    max-width: 25vh;
+    margin-left: 10vh;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .quoteBy {
   font-family: "Prata", serif;
@@ -159,22 +297,48 @@ footer {
   font-weight: 200;
   background-color: transparent;
   text-align: center;
-  position: absolute;
-  top: 525px;
-  left: 800px;
-  z-index: 3;
+  position: relative;
+  top: -50vh;
+  margin-left: 60vh;
+  z-index: 2;
+  @media only screen and (max-width: 767px) {
+    margin-top: 2vh;
+    font-size: 1.5vh;
+    margin-left: -2vh;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .homeImg {
   animation: fadeIn 5s;
   width: 100%;
-  position: absolute;
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90%;
-  margin-top: 30px;
+  height: 80vh;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 5vh;
   z-index: 1;
+
+  @media only screen and (max-width: 767px) {
+    margin-top: 2vh;
+    height: 40vh;
+    width: 100%;
+
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .addBlog {
   font-family: "Antic Didone", serif;
@@ -186,10 +350,28 @@ footer {
   border: 2px solid black;
   font-size: 16px;
   text-decoration: none;
+  @media only screen and (max-width: 767px) {
+    /* Styles for small screens */
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 #addBlogBtn {
   margin-left: 120px;
   margin-bottom: -10px;
+  @media only screen and (max-width: 767px) {
+    margin-left: -4vh;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .addBlog:hover {
   background-color: black;
@@ -199,6 +381,15 @@ footer {
 #submitBtn{
     margin-top: 70px;
     margin-bottom: 20px;
+    @media only screen and (max-width: 767px) {
+      /* Styles for small screens */
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      /* Styles for medium screens */
+    }
+    @media only screen and (min-width: 992px) {
+      /* Styles for large screens */
+    }
 }
 .newEditTitle{
     text-align: center;
@@ -208,6 +399,15 @@ footer {
   font-weight: 300;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  @media only screen and (max-width: 767px) {
+    /* Styles for small screens */
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .formPage{
     text-align: center;
@@ -221,6 +421,16 @@ footer {
     width: 50%;
     outline: 1px solid white; 
 outline-offset: -10px;
+@media only screen and (max-width: 767px) {
+  margin-left: 2.5vh;
+  width: 90%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles for medium screens */
+}
+@media only screen and (min-width: 992px) {
+  /* Styles for large screens */
+}
 
 }
 
@@ -233,6 +443,16 @@ outline-offset: -10px;
     margin-bottom: 10px;
     font-size: 30px;
     text-transform: uppercase;
+    @media only screen and (max-width: 767px) {
+      margin-top: 2vh;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      /* Styles for medium screens */
+    }
+    @media only screen and (min-width: 992px) {
+      /* Styles for large screens */
+    }
+
 }
 .blogContent{
     font-family: arial;
@@ -243,17 +463,46 @@ outline-offset: -10px;
     line-height: 1.2em;
     width: 500px;
     padding: 50px 50px 50px 100px;
+    @media only screen and (max-width: 767px) {
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      /* Styles for medium screens */
+    }
+    @media only screen and (min-width: 992px) {
+      /* Styles for large screens */
+    }
     
 }
 #blogContent{
     margin-left: 240px;
     margin-top: 120px;
-    
     background-color: white;
+    @media only screen and (max-width: 767px) {
+      margin-left: -1vh;
+      width: 95%;
+      margin-top: 46vh;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      /* Styles for medium screens */
+    }
+    @media only screen and (min-width: 992px) {
+      /* Styles for large screens */
+    }
 }
 #blogContentTwo{
     border: 5px solid white;
     margin-left: 170px;
+    @media only screen and (max-width: 767px) {
+      margin-left: 1vh;
+      width: 95%;
+      margin-bottom: -5vh;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      /* Styles for medium screens */
+    }
+    @media only screen and (min-width: 992px) {
+      /* Styles for large screens */
+    }
 }
 .showQuote{
     font-family: "Bodoni Moda", serif;
@@ -264,6 +513,18 @@ outline-offset: -10px;
     margin-top: 150px;
     display: flex;
   justify-content: center;
+  @media only screen and (max-width: 767px) {
+    width: 80%;
+    text-align: center;
+    margin-left: 5vh;
+
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
     
 }
 .showImg {
@@ -273,26 +534,99 @@ outline-offset: -10px;
   animation: fadeIn 5s;
   outline: 1px solid white; 
 outline-offset: -10px;
+aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+@media only screen and (max-width: 767px) {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles for medium screens */
+}
+@media only screen and (min-width: 992px) {
+  /* Styles for large screens */
+}
 }
 #showImgOne{
     margin-top: 175px;
+    @media only screen and (max-width: 767px) {
+      margin-top: 2vh;
+      margin-left: 5vh;
+      height: 40vh;
+  width: 35vh;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      /* Styles for medium screens */
+    }
+    @media only screen and (min-width: 992px) {
+      /* Styles for large screens */
+    }
 }
 #showImgTwo{
 margin-top: 175px;
 margin-left: 160px;
+@media only screen and (max-width: 767px) {
+  margin-top: 10vh;
+  margin-left: 5vh;
+  margin-bottom: 0vh;
+  height: 40vh;
+  width: 35vh;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles for medium screens */
+}
+@media only screen and (min-width: 992px) {
+  /* Styles for large screens */
+}
 }
 #showImgThree{
 position: absolute;
 margin-top: -240px;
 margin-left: 850px;
+@media only screen and (max-width: 767px) {
+  margin-left: 5vh;
+  height: 40vh;
+  width: 35vh;
+  margin-top: -75vh;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles for medium screens */
+}
+@media only screen and (min-width: 992px) {
+  /* Styles for large screens */
+}
 }
 #showImgFour{
     margin-top: 175px;
+    @media only screen and (max-width: 767px) {
+      height: 40vh;
+      width: 35vh;
+      margin-left: 5vh;
+      margin-top: 2vh;
+      margin-bottom: 5vh;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      /* Styles for medium screens */
+    }
+    @media only screen and (min-width: 992px) {
+      /* Styles for large screens */
+    }
     
 }
 #backToBlog{
     margin-left: 665px;
     margin-bottom: 50px;
+    @media only screen and (max-width: 767px) {
+     margin-left: 14vh;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      /* Styles for medium screens */
+    }
+    @media only screen and (min-width: 992px) {
+      /* Styles for large screens */
+    }
 }
 
 #addStory {
@@ -305,6 +639,16 @@ margin-left: 850px;
   margin-bottom: 5px;
   width: fit-content;
   background-color: transparent;
+  @media only screen and (max-width: 767px) {
+    margin-left: -5vh;
+    font-size: 29px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .back {
   background-color: white;
@@ -313,13 +657,28 @@ margin-left: 850px;
   width: 75%;
   text-align: center;
   margin-left: 200px;
+  @media only screen and (max-width: 767px) {
+    margin-left: 2vh;
+    width: 90%;
+    margin-top: 2vh;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .list{
   list-style-type: none;
+  @media only screen and (max-width: 767px) {
+    margin-left: -20vh;
+    margin-top: 35vh;
+    text-align: center;
+  }
 }
 .articleTitle {
   text-decoration: none;
-
   color: black;
   font-size: 40px;
   background-color: transparent;
@@ -327,6 +686,21 @@ margin-left: 850px;
   position: absolute;
   margin-left: 700px;
   text-align: center;
+  @media only screen and (max-width: 767px) {
+    margin-left: 3vh;
+    max-width: 38vh;
+    line-height: 1em;
+    margin-top: -13vh;
+    text-align: center;
+    float: left;
+    font-size: 29px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .articleBoxes {
   background-color: white;
@@ -343,6 +717,18 @@ margin-left: 850px;
   width: 75%;
   margin-top: 30px;
   margin-left: 200px;
+  @media only screen and (max-width: 767px) {
+    margin-top: -30vh;
+    margin-bottom: 16vh;
+    max-width: 65%;
+    
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 
 }
 
@@ -353,34 +739,101 @@ margin-left: 850px;
   animation: fadeIn 5s;
   margin-bottom: -4px;
   margin-top: -14px;
+  @media only screen and (max-width: 767px) {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    height: 45vh;  
+    width: 87%;
+    margin-top: 8vh; 
+    margin-bottom: 25vh;
+    padding-bottom: 10px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 #readMore {
   margin-left: 215px;
   position: absolute;
   bottom: 150px;
+  @media only screen and (max-width: 767px) {
+    margin-left: -26vh;
+    margin-top: 20vh;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 #date {
   margin-left: 550px;
   position: relative;
   bottom: -50px;
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 #preview {
   margin-left: 550px;
   position: absolute;
   bottom: 210px;
   text-align: center;
+  @media only screen and (max-width: 767px) {
+    position: absolute;
+    margin-left: 4vh;
+    margin-top: 60vh; 
+    max-width: 35vh;
+    text-align: center;
+    
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 
 #stamp{
-  height: 70px;
-  margin-left: 500px;;
+  height: 8vh;
+  margin-left: 500px;
   margin-bottom: 320px;
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 
 .nav_links {
   list-style: none;
   margin-right: -80px;
   color: black;
+  @media only screen and (max-width: 767px) {
+    /* Styles for small screens */
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 
 .nav_links li {
@@ -389,6 +842,15 @@ margin-left: 850px;
   position: relative;
   padding: 0px 20px;
   font-family: "Antic Didone", serif;
+  @media only screen and (max-width: 767px) {
+    /* Styles for small screens */
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .nav_links li::after {
   content: "";
@@ -401,6 +863,15 @@ margin-left: 850px;
   background-color: #3b291e;
   transform-origin: bottom center;
   transition: transform 0.6s ease-out;
+  @media only screen and (max-width: 767px) {
+    /* Styles for small screens */
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .nav_links li:hover::after {
   transform: scaleX(1);
@@ -408,6 +879,15 @@ margin-left: 850px;
 }
 #deleteBtn {
   margin-left: 200px;
+  @media only screen and (max-width: 767px) {
+    /* Styles for small screens */
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .backIcon{
     color:black;
@@ -418,6 +898,15 @@ margin-left: 850px;
   margin-bottom: 50px;
   margin-top: -60px;
   margin-left: -10px;
+  @media only screen and (max-width: 767px) {
+    /* Styles for small screens */
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 .backIcon:hover{
     color:grey;
@@ -429,6 +918,15 @@ margin-left: 850px;
   margin-bottom: 100px;
   font-family: "Antic Didone", serif;
   color: black;
+  @media only screen and (max-width: 767px) {
+    /* Styles for small screens */
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
 }
 
 .social-media-icons li {
@@ -445,56 +943,83 @@ margin-left: 850px;
 }
 
 .flex-container {
-    display: flex;
-    margin-left: 375px;
-    margin-bottom: 70px;
-    margin-top: 60px;
-  }
-  
-  .container {
-    position: relative;
-    width: 20%;
-    margin-right: 20px; 
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: 300px;
-    opacity: 1;
-  }
-  
-  .overlay-bottom-slide {
-    position: absolute;
-    opacity: 0;
-    bottom: 0;
-    right: 0;
-    top: 100%;
-    height: 0;
-    width: 100%;
-    overflow: hidden;
-    transition: 0.5s ease;
-  }
-  
-  .container:hover .overlay-bottom-slide {
-    top: 0;
-    height: 100%;
-    opacity: 1;
-  }
-  
-  .text {
-    font-family: "Bodoni Moda", serif;
-    color: white;
-    font-size: 25px;
-    font-style: bold;
-    letter-spacing: 0.2em;
-    padding: 10px 15px;
+  display: flex;
+  margin-left: 375px;
+  margin-bottom: 70px;
+  margin-top: 60px;
+  @media only screen and (max-width: 767px) {
+    margin-left: 2vh;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
   }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
+}
+
+.container {
+  position: relative;
+  width: 20%;
+  margin-right: 20px; 
+  @media only screen and (max-width: 767px) {
+    width: 20vh;
+    
+  }
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 38vh;
+  opacity: 1;
+  @media only screen and (max-width: 767px) {
+    height: 15vh;
+    width: 100%;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+  }
+}
+
+.overlay-bottom-slide {
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+  top: 100%;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.container:hover .overlay-bottom-slide {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+}
+
+.text {
+  font-family: "Bodoni Moda", serif;
+  color: white;
+  font-size: 25px;
+  font-style: bold;
+  letter-spacing: 0.2em;
+  padding: 10px 15px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  @media only screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+}
 
   
