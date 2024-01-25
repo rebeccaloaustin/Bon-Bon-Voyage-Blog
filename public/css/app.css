@@ -111,7 +111,8 @@ header {
     padding: 0;
     cursor: pointer;
     @media only screen and (max-width: 767px) {
-      margin-left: 20vh;
+      position: absolute;
+      margin-left: 40vh;
       margin-bottom: 2vh;
       margin-top: 1vh;
      }
@@ -446,6 +447,7 @@ outline-offset: -10px;
     text-transform: uppercase;
     @media only screen and (max-width: 767px) {
       margin-top: 2vh;
+      padding-bottom: 2%;
     }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       /* Styles for medium screens */
@@ -764,7 +766,7 @@ margin-left: 850px;
   position: absolute;
   bottom: 150px;
   @media only screen and (max-width: 767px) {
-    margin-left: -18vh;
+    margin-left: -16vh;
     margin-top: 20vh;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
