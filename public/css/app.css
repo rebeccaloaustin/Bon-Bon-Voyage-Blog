@@ -92,7 +92,8 @@ header {
     float: right;
     margin-right: 200px;
     @media only screen and (max-width: 767px) {
-     margin-left: 6vh;
+     margin-left: 10vh;
+     margin-top: -5vh;
     }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       /* Styles for medium screens */
@@ -111,10 +112,7 @@ header {
     padding: 0;
     cursor: pointer;
     @media only screen and (max-width: 767px) {
-      position: absolute;
-      margin-left: 40vh;
-      margin-bottom: 2vh;
-      margin-top: 1vh;
+      display: none;
      }
 }
 
@@ -483,7 +481,7 @@ outline-offset: -10px;
     @media only screen and (max-width: 767px) {
       margin-left: -1vh;
       width: 95%;
-      margin-top: 46vh;
+      margin-top: 50vh;
     }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       /* Styles for medium screens */
@@ -592,8 +590,9 @@ margin-left: 850px;
   margin-left: 7vh;
   height: 40vh;
   width: 35vh;
-  margin-top: -85vh;
-  margin-bottom: 5vh;
+  margin-top: -78vh;
+  margin-bottom: 10vh;
+
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* Styles for medium screens */
