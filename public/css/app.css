@@ -92,7 +92,7 @@ header {
     float: right;
     margin-right: 200px;
     @media only screen and (max-width: 767px) {
-     margin-left: 7vh;
+     margin-left: 5vh;
      margin-top: auto;
     }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -103,7 +103,7 @@ header {
     }
 }
 .editNav{
-  margin-left: 60vh;
+  margin-left: 52vh;
   margin-bottom: -10vh;
 }
 .trashIcon button {
@@ -481,7 +481,7 @@ outline-offset: -10px;
     @media only screen and (max-width: 767px) {
       margin-left: -1vh;
       width: 95%;
-      margin-top: 58vh;
+      margin-top: 80vh;
       padding-top: 20%;
     }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -591,7 +591,7 @@ margin-left: 850px;
   margin-left: 7vh;
   height: 40vh;
   width: 35vh;
-  margin-top: -78vh;
+  margin-top: -100vh;
   margin-bottom: 10vh;
 
 }
