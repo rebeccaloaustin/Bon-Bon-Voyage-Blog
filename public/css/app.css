@@ -103,6 +103,7 @@ header {
 }
 .editNav{
   margin-left: 60vh;
+  margin-bottom: -10vh;
 }
 .trashIcon button {
     border: none;
@@ -110,8 +111,9 @@ header {
     padding: 0;
     cursor: pointer;
     @media only screen and (max-width: 767px) {
-      margin-left: 5vh;
+      margin-left: -10vh;
       margin-bottom: 2vh;
+      margin-top: 10.5vh;
      }
 }
 
@@ -762,7 +764,7 @@ margin-left: 850px;
   position: absolute;
   bottom: 150px;
   @media only screen and (max-width: 767px) {
-    margin-left: -14vh;
+    margin-left: -12vh;
     margin-top: 20vh;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
