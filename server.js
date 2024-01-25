@@ -15,6 +15,7 @@ mongoose.connect(MONGOURI + 'blog', {
 mongoose.connection.once("open", () => {
   console.log("connected to mongo");
 });
+mongoose.set('strictQuery', true);
 
 //MIDDLEWARE
 app.use(express.urlencoded({ extended: true }));
