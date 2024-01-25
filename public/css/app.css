@@ -111,7 +111,7 @@ header {
     padding: 0;
     cursor: pointer;
     @media only screen and (max-width: 767px) {
-      margin-left: -10vh;
+      margin-left: 10vh;
       margin-bottom: 2vh;
       margin-top: 10.5vh;
      }
@@ -590,7 +590,7 @@ margin-left: 850px;
   margin-left: 7vh;
   height: 40vh;
   width: 35vh;
-  margin-top: -75vh;
+  margin-top: -85vh;
   margin-bottom: 5vh;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -764,7 +764,7 @@ margin-left: 850px;
   position: absolute;
   bottom: 150px;
   @media only screen and (max-width: 767px) {
-    margin-left: -12vh;
+    margin-left: -27vh;
     margin-top: 20vh;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
