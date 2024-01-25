@@ -9,7 +9,7 @@ const blogController = require('./controllers/blog.js')
 const MONGOURI = process.env.MONGOURI
 
 //DATABASE CONNECTION
-mongoose.connect(MONGOURI + 'blog', {
+mongoose.connect(MONGOURI + '/blog', {
   useNewUrlParser: true,
 });
 mongoose.connection.once("open", () => {
