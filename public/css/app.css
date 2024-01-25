@@ -92,8 +92,8 @@ header {
     float: right;
     margin-right: 200px;
     @media only screen and (max-width: 767px) {
-     margin-left: 10vh;
-     margin-top: -5vh;
+     margin-left: 7vh;
+     margin-top: auto;
     }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       /* Styles for medium screens */
@@ -445,7 +445,7 @@ outline-offset: -10px;
     text-transform: uppercase;
     @media only screen and (max-width: 767px) {
       margin-top: 2vh;
-      padding-bottom: 2%;
+      margin-bottom: 5vh;
     }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       /* Styles for medium screens */
@@ -481,7 +481,8 @@ outline-offset: -10px;
     @media only screen and (max-width: 767px) {
       margin-left: -1vh;
       width: 95%;
-      margin-top: 50vh;
+      margin-top: 58vh;
+      padding-top: 20%;
     }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       /* Styles for medium screens */
