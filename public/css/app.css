@@ -559,9 +559,9 @@ margin-left: 850px;
   }
 }
 #readMore {
-  margin-left: 25vh;
+  margin-left: 55vh;
   position: relative;
-  bottom: 150px;
+  bottom: 15vh;
   @media only screen and (max-width: 767px) {
     margin-left: -16vh;
     margin-top: 20vh;
