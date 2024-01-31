@@ -503,8 +503,8 @@ margin-left: 850px;
   background-color: transparent;
   top: 150px;
   position: absolute;
-  margin-left: 80vh;
-  text-align: center;
+  margin-left: 75vh;
+  text-align: left;
   @media only screen and (max-width: 767px) {
     margin-left: 3vh;
     max-width: 38vh;
@@ -545,7 +545,7 @@ margin-left: 850px;
   width: 485px;
   height: 435px;
   animation: fadeIn 5s;
-  margin-bottom: -3vh;
+  margin-bottom: -7vh;
   margin-top: -14px;
   @media only screen and (max-width: 767px) {
     aspect-ratio: 1 / 1;
@@ -559,7 +559,7 @@ margin-left: 850px;
   }
 }
 #readMore {
-  margin-left: 55vh;
+  margin-left: 48vw;
   position: relative;
   bottom: 15vh;
   @media only screen and (max-width: 767px) {
